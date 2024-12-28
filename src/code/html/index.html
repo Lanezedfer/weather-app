@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      href="../../assets/images/favicon/lanezedfer-favicon-32x32.ico"
+      rel="icon"
+      type="image/x-icon"
+      sizes="32x32"
+    />
+    <link
+      href="../../assets/images/favicon/lanezedfer-favicon-16x16.ico"
+      rel="icon"
+      type="image/x-icon"
+      sizes="16x16"
+    />
+  </head>
+  <body>
+    <header>
+      <div></div>
+      <a
+        href="https://github.com/Lanezedfer/weather-app"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="header__title"
+        >Weather App</a
+      >
+      <div class="header__dropdown">
+        <input
+          type="checkbox"
+          id="dropdown_toggle"
+          name="dropdown_toggle"
+          class="toggle"
+        />
+        <label for="dropdown_toggle"
+          ><img
+            src="../../assets/images/icons/dropdown-icon.svg"
+            alt="sidebar-toggle-icon"
+            id=""
+            class="header__icon"
+        /></label>
+        <div id="dropdown_menu" class="header__dropdown-menu">
+          <input
+            type="checkbox"
+            id="measurement_toggle"
+            name="measurement_toggle"
+            class="toggle"
+          />
+          <label for="measurement_toggle"
+            ><p
+              id="measurement_toggle_label"
+              class="header__dropdown-menu-txt"
+            ></p
+          ></label>
+          <input
+            type="checkbox"
+            id="time_toggle"
+            name="time_toggle"
+            class="toggle"
+          />
+          <label for="time_toggle"
+            ><p id="time_toggle_label" class="header__dropdown-menu-txt"></p
+          ></label>
+          <input
+            type="checkbox"
+            id="theme_toggle"
+            name="theme_toggle"
+            class="toggle"
+          />
+          <label for="theme_toggle"
+            ><p id="theme_toggle_label" class="header__dropdown-menu-txt"></p
+          ></label>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="location" class="main__location">
+        <img
+          src="../../assets/images/icons/search-icon.svg"
+          alt="enter-location-icon"
+          id="location_enter"
+          class="main__location-icon"
+        />
+        <input
+          type="text"
+          placeholder="Enter a location"
+          id="location_input"
+          class="main__location-input"
+        />
+        <img
+          src="../../assets/images/icons/clear-icon.svg"
+          alt="clear-location-icon"
+          id="location_clear"
+          class="main__location-icon"
+        />
+      </div>
+      <div id="current_weather" class="current-weather"></div>
+    </main>
+    <footer>
+      <p>
+        Developed by
+        <a
+          href="https://github.com/Lanezedfer"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="txt-link"
+          >Lanezedfer</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>

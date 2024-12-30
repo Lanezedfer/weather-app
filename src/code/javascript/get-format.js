@@ -25,6 +25,15 @@ export function getWeatherIcon(condition) {
 }
 
 // Time
+export function formatDate(isoString) {
+  const date = new Date(isoString);
+  return date.toLocaleDateString("en-US", {
+    weekday: "short",
+    month: "short",
+    day: "2-digit",
+  });
+}
+
 export function formatTime(time) {
   const timeToggle = document.getElementById("time_toggle");
 

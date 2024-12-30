@@ -31,6 +31,12 @@ function toggleLightTheme() {
   const currentWeatherSmallIcons = document.querySelectorAll(
     ".current-weather__icon-small",
   );
+  const dailyForecastLargeIcons = document.querySelectorAll(
+    ".daily-forecast__icon-large",
+  );
+  const dailyForecastSmallIcons = document.querySelectorAll(
+    ".daily-forecast__icon-small",
+  );
   const hourlyForecastLargeIcons = document.querySelectorAll(
     ".hourly-forecast__icon-large",
   );
@@ -57,6 +63,12 @@ function toggleLightTheme() {
   currentWeatherSmallIcons.forEach((icon) => {
     icon.classList.add("icon--light-theme");
   });
+  dailyForecastLargeIcons.forEach((icon) => {
+    icon.classList.add("icon--light-theme");
+  });
+  dailyForecastSmallIcons.forEach((icon) => {
+    icon.classList.add("icon--light-theme");
+  });
   hourlyForecastLargeIcons.forEach((icon) => {
     icon.classList.add("icon--light-theme");
   });
@@ -71,6 +83,12 @@ function toggleDarkTheme() {
   );
   const currentWeatherSmallIcons = document.querySelectorAll(
     ".current-weather__icon-small",
+  );
+  const dailyForecastLargeIcons = document.querySelectorAll(
+    ".daily-forecast__icon-large",
+  );
+  const dailyForecastSmallIcons = document.querySelectorAll(
+    ".daily-forecast__icon-small",
   );
   const hourlyForecastLargeIcons = document.querySelectorAll(
     ".hourly-forecast__icon-large",
@@ -96,6 +114,12 @@ function toggleDarkTheme() {
     icon.classList.remove("icon--light-theme");
   });
   currentWeatherSmallIcons.forEach((icon) => {
+    icon.classList.remove("icon--light-theme");
+  });
+  dailyForecastLargeIcons.forEach((icon) => {
+    icon.classList.remove("icon--light-theme");
+  });
+  dailyForecastSmallIcons.forEach((icon) => {
     icon.classList.remove("icon--light-theme");
   });
   hourlyForecastLargeIcons.forEach((icon) => {

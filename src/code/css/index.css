@@ -47,6 +47,10 @@ body {
   font-weight: var(--font-weight-regular);
 }
 
+hr {
+  border: 0.1em solid var(--color-foreground);
+}
+
 .toggle {
   display: none;
 }
@@ -185,6 +189,12 @@ main {
   font-size: var(--font-size-standard);
   outline: none;
   width: 100%;
+}
+
+.main__txt-title {
+  font-size: var(--font-size-large);
+  font-weight: var(--font-weight-bold);
+  margin-top: 0.5em;
 }
 
 /* Footer

@@ -14,7 +14,6 @@ import {
   getTemperatureUnit,
   getWeatherIcon,
 } from "./get-format.js";
-import { toggleTheme } from "./toggle.js";
 
 export function displayCurrentWeather(data, unit, retrievedAt) {
   const currentWeather = document.getElementById("current_weather");
@@ -78,6 +77,4 @@ export function displayCurrentWeather(data, unit, retrievedAt) {
       </div>
     </div>
   `;
-
-  toggleTheme();
 }

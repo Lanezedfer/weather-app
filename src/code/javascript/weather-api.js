@@ -1,9 +1,11 @@
 import { displayCurrentWeather } from "./current-weather.js";
+import { displayHourlyForecast } from "./hourly-forecast.js";
 import {
   getCurrentTime,
   getMeasurementUnit,
   getTimeFormat,
 } from "./get-format.js";
+import { toggleTheme } from "./toggle.js";
 
 export async function getWeather() {
   const location = document.getElementById("location_input");
@@ -24,6 +26,8 @@ export async function getWeather() {
     location.value = data.resolvedAddress;
 
     displayCurrentWeather(data, unit, formattedTime);
+    displayHourlyForecast(data, unit);
+    toggleTheme();
   } catch (error) {
     alert(`${error.message}`);
   }

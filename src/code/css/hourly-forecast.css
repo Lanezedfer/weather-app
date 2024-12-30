@@ -45,14 +45,9 @@
 }
 
 .hourly-forecast__icon-small {
-  filter: invert(1);
   height: var(--icon-size-medium);
   margin: 0 auto;
   width: var(--icon-size-medium);
-}
-
-.hourly-forecast__icon-small.icon--light-theme {
-  filter: invert(0);
 }
 
 .hourly-forecast__txt-condition {

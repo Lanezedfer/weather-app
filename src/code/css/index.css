@@ -30,7 +30,8 @@
   /* Icon Sizes */
   --icon-size-standard: 1.5em;
   --icon-size-medium: 2.7em;
-  --icon-size-large: 8em;
+  --icon-size-large: 6em;
+  --icon-size-extra-large: 8em;
 
   /* Effects */
   --effect-icon-opacity: 0.8;

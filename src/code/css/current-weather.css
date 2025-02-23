@@ -1,0 +1,110 @@
+/* Current Weather Containers */
+.current-weather {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  margin: 1em 0;
+  padding: 0.5em;
+  width: 100%;
+}
+
+.current-weather__main-data {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.current-weather__secondary-data {
+  align-items: center;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
+  padding: 0.3em;
+  width: 11em;
+}
+
+.current-weather__secondary-data-container {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  justify-content: center;
+}
+
+/* Current Weather Elements */
+.current-weather__icon-large {
+  filter: invert(1);
+  grid-area: 1 / 1 / 3 / 2;
+  height: var(--icon-size-large);
+  padding-right: 0.5em;
+  width: var(--icon-size-large);
+}
+
+.current-weather__icon-large.icon--light-theme {
+  filter: invert(0);
+}
+
+.current-weather__icon-small {
+  grid-area: 1 / 1 / 3 / 2;
+  height: var(--icon-size-medium);
+  padding-right: 0.5em;
+  width: var(--icon-size-medium);
+}
+
+.current-weather__txt-condition {
+  font-size: var(--font-size-large);
+  font-weight: var(--font-weight-bold);
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.current-weather__txt-data {
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-bold);
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.current-weather__txt-temperature {
+  font-size: var(--font-size-extra-large);
+  font-weight: var(--font-weight-bold);
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.current-weather__txt-time {
+  font-size: var(--font-size-standard);
+  font-weight: var(--font-weight-regular);
+}
+
+.current-weather__txt-title {
+  font-size: var(--font-size-standard);
+  font-weight: var(--font-weight-regular);
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.current-weather__txt-wind {
+  font-size: var(--font-size-standard);
+  font-weight: var(--font-weight-bold);
+}
+
+/* Media Queries
+---------------------------------------------------------------------------------------------------- */
+@media only screen and (max-width: 357px) {
+  .current-weather {
+    gap: 0.3em;
+  }
+
+  .current-weather__main-data {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .current-weather__icon-large {
+    margin: 0 auto;
+    padding-right: 0;
+  }
+
+  .current-weather__icon-large,
+  .current-weather__txt-condition,
+  .current-weather__txt-temperature {
+    grid-area: auto;
+  }
+}

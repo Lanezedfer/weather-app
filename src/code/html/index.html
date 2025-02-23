@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      href="../../assets/images/favicon/lanezedfer-favicon-32x32.ico"
+      rel="icon"
+      type="image/x-icon"
+      sizes="32x32"
+    />
+    <link
+      href="../../assets/images/favicon/lanezedfer-favicon-16x16.ico"
+      rel="icon"
+      type="image/x-icon"
+      sizes="16x16"
+    />
+  </head>
+  <body>
+    <header>
+      <div></div>
+      <a
+        href="https://github.com/Lanezedfer/weather-app"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="header__title"
+        >Weather App</a
+      >
+      <div class="header__dropdown">
+        <input type="checkbox" id="dropdown" name="dropdown" class="toggle" />
+        <label for="dropdown"
+          ><img
+            src="../../assets/images/icons/dropdown-icon.svg"
+            alt="Dropdown icon"
+            class="header__icon"
+        /></label>
+        <div id="dropdown_menu" class="header__dropdown-menu">
+          <input
+            type="checkbox"
+            id="measurement"
+            name="measurement"
+            class="toggle"
+          />
+          <label for="measurement"
+            ><p id="measurement_label" class="header__dropdown-menu-txt"></p
+          ></label>
+          <input type="checkbox" id="time" name="time" class="toggle" />
+          <label for="time"
+            ><p id="time_label" class="header__dropdown-menu-txt"></p
+          ></label>
+          <input type="checkbox" id="theme" name="theme" class="toggle" />
+          <label for="theme"
+            ><p id="theme_label" class="header__dropdown-menu-txt"></p
+          ></label>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="location" class="main__location">
+        <img
+          src="../../assets/images/icons/search-icon.svg"
+          alt="Enter location"
+          id="location_enter"
+          class="main__location-icon"
+        />
+        <input
+          type="text"
+          placeholder="Enter a location"
+          id="location_input"
+          class="main__location-input"
+        />
+        <img
+          src="../../assets/images/icons/clear-icon.svg"
+          alt="Clear location"
+          id="location_clear"
+          class="main__location-icon"
+        />
+      </div>
+      <section id="current_weather" class="current-weather"></section>
+    </main>
+    <footer>
+      <p>
+        Developed by
+        <a
+          href="https://github.com/Lanezedfer"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="txt-link"
+          >Lanezedfer</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>

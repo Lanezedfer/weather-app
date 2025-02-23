@@ -1,4 +1,5 @@
 import { displayCurrentWeather } from "./current-weather.js";
+import { displayDailyForecast } from "./daily-forecast.js"
 import {
   getCurrentTime,
   getMeasurementUnit,
@@ -27,6 +28,7 @@ export async function getWeather() {
 
     displayCurrentWeather(data, unit, formattedTime);
     displayHourlyForecast(data, unit);
+    displayDailyForecast(data, unit);
     toggleTheme();
   } catch (error) {
     alert(`${error.message}`);

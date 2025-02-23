@@ -24,7 +24,16 @@ export function getWeatherIcon(condition) {
   return mapping[condition];
 }
 
-// Time
+// Date and Time
+export function formatDate(isoString) {
+  const date = new Date(isoString);
+  return date.toLocaleDateString("en-US", {
+    weekday: "short",
+    month: "short",
+    day: "2-digit",
+  });
+}
+
 export function formatTime(time) {
   const timeToggle = document.getElementById("time");
 

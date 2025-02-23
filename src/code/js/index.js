@@ -2,6 +2,7 @@ import "../css/reset.css";
 import "../css/index.css";
 import "../css/current-weather.css";
 import "../css/hourly-forecast.css";
+import "../css/daily-forecast.css";
 
 import {
   loadLocationPreference,

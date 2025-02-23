@@ -4,6 +4,7 @@ import {
   getMeasurementUnit,
   getTimeFormat,
 } from "./get-format.js";
+import { displayHourlyForecast } from "./hourly-forecast.js";
 import { toggleTheme } from "./toggle.js";
 
 export async function getWeather() {
@@ -25,6 +26,7 @@ export async function getWeather() {
     location.value = data.resolvedAddress;
 
     displayCurrentWeather(data, unit, formattedTime);
+    displayHourlyForecast(data, unit);
     toggleTheme();
   } catch (error) {
     alert(`${error.message}`);

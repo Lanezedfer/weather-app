@@ -1,0 +1,73 @@
+/* Hourly Forecast Containers */
+.hourly-forecast {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+  justify-content: center;
+  margin: 1em 0;
+}
+
+.hourly-forecast__card {
+  background-color: var(--color-background-tertiary);
+  border-radius: 0.5em;
+  padding: 0.5em;
+}
+
+.hourly-forecast__main-data {
+  align-items: center;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  margin: 0.3em auto;
+  max-width: fit-content;
+}
+
+.hourly-forecast__secondary-data-container {
+  display: flex;
+}
+
+.hourly-forecast__secondary-data {
+  flex: 30%;
+  margin: 0.3em auto;
+}
+
+/* Hourly Forecast Elements */
+.hourly-forecast__icon-large {
+  filter: invert(1);
+  height: var(--icon-size-medium-large);
+  padding-right: 0.5em;
+  width: var(--icon-size-medium-large);
+}
+
+.hourly-forecast__icon-large.icon--light-theme {
+  filter: invert(0);
+}
+
+.hourly-forecast__icon-small {
+  height: var(--icon-size-medium);
+  margin: 0 auto;
+  width: var(--icon-size-medium);
+}
+
+.hourly-forecast__txt-condition {
+  font-size: var(--font-size-standard);
+  font-weight: var(--font-weight-regular);
+  text-align: center;
+}
+
+.hourly-forecast__txt-data {
+  font-size: var(--font-size-standard);
+  font-weight: var(--font-weight-regular);
+  text-align: center;
+  text-wrap: nowrap;
+}
+
+.hourly-forecast__txt-temperature {
+  font-size: var(--font-size-large);
+  font-weight: var(--font-weight-bold);
+}
+
+.hourly-forecast__txt-time {
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-bold);
+  text-align: center;
+}
